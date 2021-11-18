@@ -1,0 +1,13 @@
+a, b = map(int, input().split())
+
+
+def equation(a, b):
+
+    try:
+        return f"{-b / a:.2f}"
+    except ZeroDivisionError:
+        return "nema" if b else "bezlich"
+
+
+print(equation(a, b))
+
